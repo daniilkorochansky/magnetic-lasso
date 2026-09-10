@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/github/license/daniilkorochansky/magnetic-lasso)](https://github.com/daniilkorochansky/magnetic-lasso/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/daniilkorochansky/magnetic-lasso)](https://github.com/daniilkorochansky/magnetic-lasso/releases)
 
-# Magnetic Lasso
+# Magnetic Lasso Plugin
 <img width="128" height="128" alt="magnetic_lasso_readme" src="https://github.com/user-attachments/assets/29b881bd-6c19-4dbe-a7de-7217017bd78d" />
 
 Magnetic Lasso tool for Paint.NET using OpenCV Intelligent Scissors.
@@ -19,4 +19,21 @@ Quickly create precise selections by snapping the contour to image edges, with r
 * Download the latest release.
 * Unzip the archive into the [Paint.Net folder]/Effects.
 
-## Developers
+## Development
+### Requirements
+- .NET 9 SDK
+- Paint.NET 5.1 or later
+- Visual Studio 2026 or another compatible .NET IDE
+
+### Clone the repository
+```bash
+git clone https://github.com/daniilkorochansky/magnetic-lasso.git
+cd magnetic-lasso
+```
+
+### Build
+Restore NuGet packages and build the project in Release configuration:
+```bash
+dotnet restore
+dotnet build -c Release
+```
