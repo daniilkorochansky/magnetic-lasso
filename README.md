@@ -15,6 +15,12 @@ Quickly create precise selections by snapping the contour to image edges, with r
 
 <img width="826" height="505" alt="copy_magnetic_lasso" src="https://github.com/user-attachments/assets/5374f747-5980-4474-9c50-4d5ed22e8964" />
 
+## Key Features
+* **Smart Edge Snapping:** Automatically detects and snaps to object boundaries using a fluid livewire/intelligent scissors algorithm.
+* **Manual Anchor Points:** Left-click anywhere to manually force an anchor point, giving you full control over low-contrast areas or sharp corners.
+* **On-the-Fly Correction:** Easily undo mistakes or completely reset the selection path using standard hotkeys.
+* **One-Click Export with Transparency:** Automatically copies the final isolated object to your clipboard with full alpha-channel (transparency) preservation.
+
 ## Installation
 * Download the latest release.
 * Unzip the archive into the [Paint.Net folder]/Effects.
