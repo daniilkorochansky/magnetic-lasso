@@ -7,6 +7,7 @@
 <img width="128" height="128" alt="magnetic_lasso_readme" src="https://github.com/user-attachments/assets/29b881bd-6c19-4dbe-a7de-7217017bd78d" />
 
 Magnetic Lasso tool for Paint.NET using OpenCV Intelligent Scissors.
+
 Quickly create precise selections by snapping the contour to image edges, with real-time magnetic previews and editable contour segments.
 
 ## Overview
