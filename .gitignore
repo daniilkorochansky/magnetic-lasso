@@ -1,0 +1,52 @@
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+
+# Build logs
+*.log
+
+packages/
+*.nupkg
+*.snupkg
+
+# NuGet generated files
+project.assets.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+.idea/
+
+coverage/
+coverage.xml
+*.coverage
+*.coveragexml
+
+docs/_site/
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini

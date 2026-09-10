@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PdnRoot>D:\Program Files\Paint.NET</PdnRoot>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>MagneticLasso</RootNamespace>
+    <AssemblyName>MagneticLasso</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<FileVersion>1.0.0.0</FileVersion>
+	<Authors>Daniil Korochansky</Authors>
+	<Company>Daniil Korochansky</Company>
+	<Copyright>Copyright © 2026 Daniil Korochansky</Copyright>
+    <Description>Magnetic Lasso tool for Paint.NET using OpenCV Intelligent Scissors.</Description>
+    <RepositoryUrl>https://github.com/daniilkorochansky/magnetic-lasso</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/daniilkorochansky/magnetic-lasso</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="magnetic_lasso.ico" />
+    <None Remove="magnetic_lasso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="magnetic_lasso.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PaintDotNet.Base"><HintPath>$(PdnRoot)\PaintDotNet.Base.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="PaintDotNet.ComponentModel"><HintPath>$(PdnRoot)\PaintDotNet.ComponentModel.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="PaintDotNet.Core"><HintPath>$(PdnRoot)\PaintDotNet.Core.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="PaintDotNet.Effects.Core"><HintPath>$(PdnRoot)\PaintDotNet.Effects.Core.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="PaintDotNet.Framework"><HintPath>$(PdnRoot)\PaintDotNet.Framework.dll</HintPath><Private>False</Private></Reference>
+	<Reference Include="PaintDotNet.Primitives">
+	  <HintPath>$(PdnRoot)\PaintDotNet.Primitives.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="PaintDotNet.ObjectModel">
+	  <HintPath>$(PdnRoot)\PaintDotNet.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+	</Reference>
+    <Reference Include="PaintDotNet.Windows"><HintPath>$(PdnRoot)\PaintDotNet.Windows.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="PaintDotNet.Windows.Core"><HintPath>$(PdnRoot)\PaintDotNet.Windows.Core.dll</HintPath><Private>False</Private></Reference>
+	<PackageReference Include="OpenCvSharp4" Version="4.11.0.20250507" />
+	<PackageReference Include="OpenCvSharp4.Extensions" Version="4.11.0.20250507" />
+	<PackageReference Include="OpenCvSharp4.Windows" Version="4.11.0.20250507" />
+	<PackageReference Include="System.Drawing.Common" Version="9.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="magnetic_lasso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MagneticLasso.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
