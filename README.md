@@ -1,1 +1,1 @@
-# magnetic-lasso
+# Magnetic Lasso
